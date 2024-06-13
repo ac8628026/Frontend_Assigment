@@ -17,7 +17,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center ">
       <div className="mb-3 mt-3 ">
         <button
           className={`px-5 mx-3 py-3 rounded-lg font-semibold transition-all ${
@@ -40,7 +40,7 @@ function App() {
           Query Filter
         </button>
       </div>
-      <div className="w-full h-full flex items-center justify-center">
+      <div className="w-full h-full">
         {renderComponent()}
       </div>
     </div>
