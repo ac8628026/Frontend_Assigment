@@ -35,25 +35,27 @@ const QueryFilter = () => {
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Query Filter Builder</h1>
-      <div className="relative">
-        <div className="flex flex-wrap border p-2 rounded w-full">
-          {search.map((attribute, index) => (
+      <div className="relative ">
+        <div className="flex flex-wrap border p-0  w-full border-gray-400 h-10 rounded-lg">
+         <div className='flex bg-white items-center'  >
+         {search.map((attribute, index) => (
             <span
               key={index}
-              className="bg-gray-200 text-gray-800 p-1 m-1 rounded flex items-center"
+              className=" text-gray-800 mx-1 p-2 border border-gray-500 h-7 rounded flex items-center"
             >
               {attribute}
               <button
-                className="ml-2 text-red-500"
+                className="ml-2 text-gray-500"
                 onClick={() => removeAttribute(attribute)}
               >
                 &times;
               </button>
             </span>
           ))}
+         </div>
           <input
             type="text"
-            className="border-0 flex-grow"
+            className="border-0 flex-grow rounded-lg focus:outline-none "
             placeholder="Search"
             value={searchInput}
             onFocus={handleInputFocus}
