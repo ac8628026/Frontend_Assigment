@@ -11,3 +11,20 @@ body {
   .react-flow__node {
     @apply p-4 bg-white border rounded shadow;
   }
+
+  .react-flow .react-flow__handle {
+    width: 22px;
+    height: 74px;
+    border-radius: 3px;
+    background-color: #73d225;
+  
+  
+  }
+  
+  .react-flow .react-flow__handle-left {
+    left: -10px;
+  }
+  
+  .react-flow .react-flow__handle-right {
+    right: -10px;
+  }
