@@ -136,15 +136,15 @@ const FlowChart = () => {
 
   return (
     <div>
-      <div style={{ marginBottom: "10px" }}>
+      <div className="mb=10 flex justify-between">
         <button
-          className="bg-black text-white rounded-lg p-3 m-2 hover:bg-slate-800"
+          className="bg-slate-900 text-white rounded-lg p-3 m-2 hover:bg-slate-800"
           onClick={() => addNode("source")}
         >
           Add Source
         </button>
         <button
-          className="bg-black text-white rounded-lg p-3 m-2 hover:bg-slate-800"
+          className="bg-slate-900 text-white rounded-lg p-3 m-2 hover:bg-slate-800"
           onClick={() => addNode("destination")}
         >
           Add Destination
