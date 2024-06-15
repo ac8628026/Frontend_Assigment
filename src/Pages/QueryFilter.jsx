@@ -54,13 +54,13 @@ const QueryFilter = () => {
     attribute.toLowerCase().includes(searchInput.toLowerCase())
   );
 
-  useEffect(() => {
-    if (selectedAttribute || selectedOperation) {
-      setIsDropdownOpen(false);
-    } else {
-      setIsDropdownOpen(true);
-    }
-  }, [selectedAttribute, selectedOperation]);
+  // useEffect(() => {
+  //   if (selectedAttribute || selectedOperation) {
+  //     setIsDropdownOpen(false);
+  //   } else {
+  //     setIsDropdownOpen(true);
+  //   }
+  // }, [selectedAttribute, selectedOperation]);
 
   return (
     <div className="container mx-auto p-4">
